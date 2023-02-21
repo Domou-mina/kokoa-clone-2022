@@ -1,0 +1,43 @@
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+
+.nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    box-sizing: border-box;
+    /*widht를 100%로 넣었을 때, 오른쪽이 짤림현상이 일어났다. 고로, box-sizing:border-box;를 설정하니 넓이에 맞게 
+    꼭 들어왔다!*/
+    background-color: beige;
+    padding:30px 32px;
+    border-top: 2px solid rgb(226, 226, 226);
+}
+
+.nav__link{    
+    color:#2e3632;
+}
+
+
+
+
+.nav__notification{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    /*display:block;을 했다. 왜냐하면 widht와 height값을 
+    넣을려면 span이 그냥 inline 인 이상 가만둘 수 없어서! 
+    그런데.. 이걸 넣고 하다보니, positon을 absolute로 설정을 해도
+    레이어가 위로 안 쌓이는 문제가 발생. -> 그래서 지웠다*/
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    position:absolute;
+    right:420px;
+    top:-10px;
+}
